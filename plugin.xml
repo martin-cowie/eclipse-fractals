@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="zowie.fractals.editors.FractalEditor"
+            contributorClass="zowie.fractals.editors.FractalEditorContrib"
+            default="true"
+            extensions="fractal"
+            icon="icons/Mandelbrot_bw_16x16.gif"
+            id="zowie.fractals.editors.FractalEditor"
+            name="Fractal Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="Fractal Examples"
+            id="Zowie.Fractals.actionSet"
+            label="Fractal Examples"
+            visible="true">
+         <action
+               class="zowie.fractals.actions.ExampleFractalAction"
+               icon="icons/Mandelbrot_bw_16x16.png"
+               id="zowie.fractals.actions.ExampleFractalAction"
+               label="&amp;Example Fractal"
+               menubarPath="sampleMenu/sampleGroup"
+               pulldown="true"
+               style="pulldown"
+               toolbarPath="sampleGroup"
+               tooltip="Pick an example Fractal">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

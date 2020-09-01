@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Fractals Plug-in
+Bundle-SymbolicName: Zowie.Fractals;singleton:=true
+Bundle-Version: 2009.5.7
+Bundle-Activator: zowie.fractals.Activator
+Bundle-Vendor: Martin Cowie
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Eclipse-LazyStart: true
+Bundle-ClassPath: lib/imagetransfer.jar,
+ .
+Import-Package: org.eclipse.core.resources,
+ org.eclipse.ui.dialogs,
+ org.eclipse.ui.part,
+ org.eclipse.ui.views.properties
